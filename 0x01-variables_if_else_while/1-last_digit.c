@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
  * main - function that starts the program
@@ -8,23 +9,26 @@
  */
 int main(void)
 {
-	int n;
+	int n = 0;
+	int lastD;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("Last digit of %d is %d ", n, n % 10);
-	if (n % 10 > 5)
+	lastD = n % 10;
+
+	if (lastD > 5)
 	{
-	printf("and is greater than 5\n", n);
+	printf("and is greater than 5\n");
 	}
-	else if (n % 10 == 0)
+	else if (lastD == 0)
 	{
-	printf("and is 0\n", n);
+	printf("and is 0\n");
 	}
 	else
 	{
-	printf("and is less than 6 and not 0\n", n);
+	printf("and is less than 6 and not 0\n");
 	}
 	return (0);
+
 
 }
