@@ -10,16 +10,15 @@
 
 int main(void)
 {
-	int number = 0;
-	int max = 9;
+	int number = 48;
+	int max = 57;
 
 	while (number <= max)
 	{
-		printf("%d", number);
+		printf(number);
 		number++;
 	}
 	putchar ('\n');
 
 	return (0);
 }
-
