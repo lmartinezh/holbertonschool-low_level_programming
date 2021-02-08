@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - program start
- * Description: print a lowercase and uppercase alphabet string using putchar
+ * Description: print alphabet character string excluding letters "q" and "e"
  * Return: 0
  */
 
