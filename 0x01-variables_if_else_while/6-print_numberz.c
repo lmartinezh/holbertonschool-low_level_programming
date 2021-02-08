@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
  * main - program start
@@ -10,15 +8,12 @@
 
 int main(void)
 {
-	int number = 48;
-	int max = 57;
+	int ch;
 
-	while (number <= max)
+	for (ch = '0' ; ch <= '9' ; ch++)
 	{
-		printf(number);
-		number++;
+		putchar(ch);
 	}
-	putchar ('\n');
-
+	putchar('\n');
 	return (0);
 }
