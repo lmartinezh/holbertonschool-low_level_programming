@@ -1,28 +1,16 @@
 #include <stdio.h>
-
 /**
- * main - entry point
- * Description: print the numbers.
- * Return: 0
- */
-
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int number = 48;
-	int max = 57;
-	char letter = 'a';
-	char f = 'f';
+	char hex[] = "0123456789abcdef";
+	int i;
 
-	while (number <= max)
-	{
-		putchar (number);
-		number++;
-	}
-	while (letter <= f)
-	{
-		putchar (letter);
-		letter++;
-	}
-	putchar ('\n');
-
+	for (i = 0; i < 16; i++)
+		putchar(hex[i]);
+	putchar('\n');
 	return (0);
+}
