@@ -10,19 +10,20 @@ int main(void)
 {
 	int number = 48;
 	int max = 57;
-	char letter = 'a';
-	char f = 'f';
+/*el 48 es 0 en asci y el 57 es 9 en asci */
 
 	while (number <= max)
 	{
 		putchar (number);
+		if (number < max)
+		{
+			putchar (',');
+			putchar (' ');
+		}
+
 		number++;
-	}
-	while (letter <= f)
-	{
-		putchar (letter);
-		letter++;
 	}
 	putchar ('\n');
 
 	return (0);
+}
