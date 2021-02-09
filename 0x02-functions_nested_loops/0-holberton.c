@@ -1,21 +1,18 @@
 #include "holberton.h"
+
 /**
- * main - entry point
- * Description: print Holberton.
- * Return: 0
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	_putchar('H');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
-	_putchar('t');
-	_putchar('o');
-	_putchar('n');
-	_putchar('\n');
+	char word[] = "Holberton\n";
+
+	int index;
+
+	for (index = 0; index <= 9; index++)
+		_putchar(word[index]);
 
 	return (0);
 }
