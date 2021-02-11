@@ -1,34 +1,34 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <time.h>
 
 /**
- * main - function that starts the program
+ * main - Entry point
  *
- * Return: generate string of numbers
+ * Return: Always 0 (Success)
+ *
  */
 int main(void)
 {
-	int n = 0;
-	int lastD;
+	int n;
+	short lastNumber;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastD = n % 10;
 
-	if (lastD > 5)
-	{
-	printf("and is greater than 5\n");
-	}
-	else if (lastD == 0)
-	{
-	printf("and is less than 6 and not 0\n");
-	}
+	lastNumber = (n % 10);
+
+	if (lastNumber == 0)
+		printf("Last digit of %d is %d and is 0\n", n, lastNumber);
+	else if (lastNumber > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastNumber);
 	else
-	{
-	printf("is 0\n");
-	}
-	return (0);
+		printf(
+			"Last digit of %d is %d and is less than 6 and not 0\n",
+			n,
+			lastNumber
+		);
 
+	return (0);
 
 }
