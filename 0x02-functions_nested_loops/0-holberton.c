@@ -7,12 +7,15 @@
 */
 int main(void)
 {
-	char word[] = "Holberton\n";
-
-	int index;
-
-	for (index = 0; index <= 9; index++)
-		_putchar(word[index]);
-
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
 	return (0);
 }
